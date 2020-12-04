@@ -7,9 +7,13 @@
 }
 
 $i: 0;
-@while $i < 10 {
-  .motion-#{$i} {
+@while $i < 8 {
+  .motion-g1-#{$i} {
     $delay: 600ms + $i * 120ms;
+    animation: motion $delay;
+  }
+  .motion-g2-#{$i} {
+    $delay: 1200ms + $i * 120ms;
     animation: motion $delay;
   }
   $i: $i + 1;
